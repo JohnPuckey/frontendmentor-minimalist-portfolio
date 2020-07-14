@@ -1,173 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
 :root {
-    --primary-cyan: rgb(95, 180, 162);
-    --primary-dark-blue: rgb(32, 58, 70);
-    --primary-dark-gray-blue: rgb(51, 50, 61);
-    --bg-light-grey: rgb(250, 250, 250);
-    --txtfield-light-grey: rgb(234, 234, 235);
-    --error-red: rgb(244, 48, 48);
+  --primary-cyan: rgb(95, 180, 162);
+  --primary-dark-blue: rgb(32, 58, 70);
+  --primary-dark-gray-blue: rgb(51, 50, 61);
+  --bg-light-grey: rgb(250, 250, 250);
+  --txtfield-light-grey: rgb(234, 234, 235);
+  --error-red: rgb(244, 48, 48);
 }
 
-* { 
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Public Sans', sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: var(--bg-light-grey);
+  font-family: "Public Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-light-grey);
 }
 
 /* Typography */
 
-h1, h2 {
-    font-family: 'Ibarra Real Nova', serif;
-    font-weight: 700;
-    color: var(--primary-dark-gray-blue);
+h1,
+h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  color: var(--primary-dark-gray-blue);
 }
 
-h3, h4, h5, h6 {
-    font-family: 'Ibarra Real Nova', serif;
-    font-weight: 400;
-    color: var(--primary-dark-gray-blue);
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  color: var(--primary-dark-gray-blue);
 }
 
 p {
-    font-family: 'Public Sans', sans-serif;
-    color: var(--primary-dark-gray-blue);
+  font-family: "Public Sans", sans-serif;
+  color: var(--primary-dark-gray-blue);
 }
 
 /* button styles */
 
 .btn {
-    cursor: pointer;
-    font-family: 'Public Sans', sans-serif;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--primary-dark-blue);
-    background-color: var(--bg-light-grey);
-    border: 1px solid var(--primary-dark-blue);
-    padding: 16px 30px;
+  cursor: pointer;
+  font-family: "Public Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-dark-blue);
+  background-color: var(--bg-light-grey);
+  border: 1px solid var(--primary-dark-blue);
+  padding: 16px 30px;
 }
 
 .btn:hover {
-    color: var(--bg-light-grey);
-    background-color: var(--primary-dark-blue);
+  color: var(--bg-light-grey);
+  background-color: var(--primary-dark-blue);
 }
 
 .btn:disabled {
-    cursor: initial;
-    color: var(--txtfield-light-grey);
-    background-color: var(--bg-light-grey);
-    border: 1px solid var(--txtfield-light-grey);
+  cursor: initial;
+  color: var(--txtfield-light-grey);
+  background-color: var(--bg-light-grey);
+  border: 1px solid var(--txtfield-light-grey);
 }
 
 .hero-btn {
-    cursor: pointer;
-    position: relative;
-    font-family: 'Public Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background-color: var(--primary-dark-blue);
-    color: var(--bg-light-grey);
-    padding: 16px 35px 16px 83px;
-    border: none;
-    overflow: hidden;
-
+  cursor: pointer;
+  position: relative;
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: var(--primary-dark-blue);
+  color: var(--bg-light-grey);
+  padding: 16px 35px 16px 83px;
+  border: none;
+  overflow: hidden;
 }
 
 .hero-btn span {
-    position: absolute;
-    padding: 15px 16px;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  padding: 15px 16px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hero-btn:hover {
-    background-color: var(--primary-cyan);
+  background-color: var(--primary-cyan);
 }
 
 .hero-btn:disabled {
-    background-color: var(--txtfield-light-grey);
+  background-color: var(--txtfield-light-grey);
 }
 
-.hero-btn:hover .icon-color, .hero-btn:disabled .icon-color  {
-    stroke: var(--bg-light-grey);
+.hero-btn:hover .icon-color,
+.hero-btn:disabled .icon-color {
+  stroke: var(--bg-light-grey);
 }
 
 /* universal styles */
 
 .container {
-    width: 82%;
-    max-width: 1110px;
-    margin: 0 auto;
+  width: 82%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 /* header */
 
 header {
-    width: 82%;
-    max-width: 1110px;
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 82%;
+  max-width: 1110px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Footer */
 
 footer {
-    background-color: var(--primary-dark-gray-blue);
-    color: var(--bg-light-grey);
-    padding: 55px 0;
+  background-color: var(--primary-dark-gray-blue);
+  color: var(--bg-light-grey);
+  padding: 55px 0;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .footer-grid svg {
- margin: 0 auto 30px;
+  margin: 0 auto 30px;
 }
 
 .footer-logo {
-    fill: var(--bg-light-grey);
-
+  fill: var(--bg-light-grey);
 }
 
 .footer-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
 .footer-link {
-    text-decoration: none;
-    color: var(--bg-light-grey);
-    margin: 0 0 30px;
+  text-decoration: none;
+  color: var(--bg-light-grey);
+  margin: 0 0 30px;
 }
 
 .social-links {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .social-link {
-    margin: 0 4px;
+  margin: 0 4px;
 }
 
 .social-icon {
-    fill: var(--bg-light-grey);
+  fill: var(--bg-light-grey);
 }
