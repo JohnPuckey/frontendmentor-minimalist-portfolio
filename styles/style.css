@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Public Sans", sans-serif;
   padding: 0;
@@ -40,6 +41,13 @@ h6 {
 p {
   font-family: "Public Sans", sans-serif;
   color: var(--primary-dark-gray-blue);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
 /* button styles */
@@ -114,12 +122,63 @@ p {
 /* header */
 
 header {
+  position: relative;
   width: 82%;
+  height: 88px;
   max-width: 1110px;
-  margin: 30px auto;
+  margin: 0px auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-menu {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/icons/hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-menu.active {
+  background-image: url(../images/icons/close.svg);
+}
+
+nav {
+  display: none;
+}
+
+nav.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  background-color: var(--primary-dark-gray-blue);
+}
+
+.nav-link {
+  color: var(--bg-light-grey);
+  margin: 35px 0 0;
+}
+
+.nav-link:last-of-type {
+  margin: 35px 0 35px;
+}
+
+.nav-link:hover {
+  color: var(--primary-cyan);
 }
 
 /* Footer */
@@ -152,9 +211,6 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 12px;
 }
 
 .footer-link {
@@ -163,14 +219,24 @@ footer {
   margin: 0 0 30px;
 }
 
+.footer-link:hover {
+  color: var(--primary-cyan);
+}
+
 .social-links {
   margin: 0 auto;
+  height: 30px;
 }
 
 .social-link {
+  padding: 5px;
   margin: 0 4px;
 }
 
 .social-icon {
   fill: var(--bg-light-grey);
+}
+
+.social-link:hover .social-icon {
+  fill: var(--primary-cyan);
 }
