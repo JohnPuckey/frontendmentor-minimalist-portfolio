@@ -1,0 +1,71 @@
+
+/* homepage styles */
+
+/* hero section */
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.hero-main {
+    max-width: 515px;
+    background-color: var(--bg-light-grey);
+}
+
+.hero-main h1 {
+    font-size: 40px;
+    letter-spacing: -0.45px;
+    line-height: 44px;
+    max-width: 400px;
+}
+
+/* About Section */
+
+.about .container{
+    display: grid;
+    grid-template-columns: 1fr; 
+    margin-top: 95px;
+
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-main {
+    border-top: 1px solid var(--txtfield-light-grey);
+    border-bottom: 1px solid var(--txtfield-light-grey);
+    padding: 0 0 50px;
+    margin-top: 30px;
+}
+
+.about-main h2 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36;
+}
+
+.about-main p {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+/* CTA Section */
+
+.cta-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}

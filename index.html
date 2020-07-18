@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/style.css">
   
   <title>Frontend Mentor | Minimalist Portfolio</title>
@@ -28,7 +29,14 @@
 <section class="hero">
   <div class="container">
     <div class="hero-image">
-
+     <picture>
+      <source media="(min-width:2000px)" srcset="images/homepage/desktop/image-homepage-hero@2x.jpg">
+      <source media="(min-width:1200px)" srcset="images/homepage/desktop/image-homepage-hero.jpg">
+      <source media="(min-width:900px)" srcset="images/homepage/tablet/image-homepage-hero@2x.jpg">
+      <source media="(min-width:600px)" srcset="images/homepage/tablet/image-homepage-hero.jpg">
+      <source media="(min-width:375px)" srcset="images/homepage/mobile/image-homepage-hero@2x.jpg">
+      <img src="images/homepage/mobile/image-homepage-hero.jpg">
+     </picture>
     </div>
     <div class="hero-main">
       <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
@@ -40,7 +48,14 @@
 <section class="about">
   <div class="container">
     <div class="about-img">
-
+      <picture>
+        <source media="(min-width:2000px)" srcset="images/homepage/desktop/image-homepage-profile@2x.jpg">
+        <source media="(min-width:1200px)" srcset="images/homepage/desktop/image-homepage-profile.jpg">
+        <source media="(min-width:900px)" srcset="images/homepage/tablet/image-homepage-profile@2x.jpg">
+        <source media="(min-width:600px)" srcset="images/homepage/tablet/image-homepage-profile.jpg">
+        <source media="(min-width:375px)" srcset="images/homepage/mobile/image-homepage-profile@2x.jpg">
+        <img src="images/homepage/mobile/image-homepage-profile.jpg">
+       </picture>
     </div>
     <div class="about-main">
       <h2>About Me</h2>
