@@ -256,8 +256,20 @@ footer {
 
 @media (min-width:768px) {
 
+    .container {
+      width: 90%;
+      max-width: 1110px;
+      margin: 0 auto;
+    }
+
     /* Header */
       
+      header {
+        width: 90%;
+        height: 145px;
+
+      }
+
       .nav-menu {
         display: none;
       }
