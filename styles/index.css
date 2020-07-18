@@ -123,3 +123,121 @@
     }
 
 }
+
+@media (min-width: 768px) {
+
+    .hero .container {
+        grid-template-rows: 1fr 280px;
+    }
+
+    .hero-image {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    .hero-main {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .about .container {
+        grid-template-columns: 280px 1fr;
+        gap: 55px;
+    }
+
+    .about-main {
+        margin-top: 0px;
+        max-width: 355px;
+        justify-self: center;
+    }
+
+    .cta-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        height: 275px;
+    }
+
+    .cta-main h2 {
+        min-width: 335px;
+    }
+
+    .line {
+        width: 100%;
+        border: 1px solid var(--txtfield-light-grey);
+        margin: 0 30px 0 50px ;
+    }
+
+    .cta-main .btn {
+        min-width: 163px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .hero .container {
+        grid-template-rows: 1fr 360px;
+    }
+
+    .hero-main {
+        max-width: 445px;
+    }
+
+    .hero-main h1 {
+        font-size: 50px;
+        letter-spacing: -0.45px;
+        line-height: 50px;
+        max-width: 385px;
+    }
+    
+
+    .about .container {
+        grid-template-columns: minmax(20%, 540px) 1fr;
+    }
+
+    .about-img {
+        flex-grow: 2;
+    }
+
+    .about-img img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 50%;
+    }
+
+    .about-main {
+        margin: 0 95px 0 auto;
+        min-width: 355px;
+        justify-self: left;
+    }
+
+@media (min-width: 1200px) {
+
+    .hero .container {
+        grid-template-rows: 1fr 360px;
+    }
+
+    .hero-main {
+        max-width: 445px;
+    }
+
+    .hero-main h1 {
+        font-size: 50px;
+        letter-spacing: -0.45px;
+        line-height: 50px;
+        max-width: 385px;
+    }
+
+    .about .container {
+        grid-template-columns: minmax(20%, 540px) 1fr;
+    }
+
+    .about-main {
+        margin: 0 95px 0 auto;
+        min-width: 355px;
+        justify-self: left;
+    }
+}
