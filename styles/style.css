@@ -58,6 +58,7 @@ p {
 a {
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 2px;
   font-size: 12px;
 }
@@ -193,6 +194,18 @@ nav.active {
   color: var(--primary-cyan);
 }
 
+
+/* CTA Section */
+
+.cta-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
 /* Footer */
 
 footer {
@@ -304,6 +317,31 @@ footer {
         color: var(--primary-cyan);
       }
 
+      /* cta */
+
+      .cta-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        height: 275px;
+    }
+
+    .cta-main h2 {
+        min-width: 335px;
+    }
+
+    .line {
+        width: 100%;
+        border: 1px solid var(--txtfield-light-grey);
+        margin: 0 30px 0 50px ;
+    }
+
+    .cta-main .btn {
+        min-width: 163px;
+    }
+
       /* Footer */
 
       footer {
@@ -349,5 +387,5 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  
+
 }
