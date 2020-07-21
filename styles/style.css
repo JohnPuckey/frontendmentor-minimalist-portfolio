@@ -53,6 +53,8 @@ p {
   font-family: "Public Sans", sans-serif;
   color: var(--primary-dark-blue);
   font-size: 16px;
+  line-height: 30px;
+
 }
 
 a {
