@@ -53,6 +53,7 @@
     .project-img {
         margin: 85px 70px 0 0;
         align-items: flex-start;
+        
     }
 
     .project:nth-of-type(even) .project-img {
@@ -91,7 +92,10 @@
 
     .project-img img {
         max-width: 540px;
+    }
 
+    .project:nth-of-type(even) {
+        justify-content: flex-end;
     }
 
     .project:nth-of-type(even) .project-img {
