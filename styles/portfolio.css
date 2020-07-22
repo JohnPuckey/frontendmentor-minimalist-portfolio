@@ -4,7 +4,7 @@
 /* portfolio */
 
 .portfolio {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .project {
@@ -40,4 +40,75 @@
 
 .project:last-of-type .project-main {
     margin-bottom: 0px;
+}
+
+
+@media (min-width:768px) {
+    .project {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-img {
+        margin: 85px 70px 0 0;
+        align-items: flex-start;
+    }
+
+    .project:nth-of-type(even) .project-img {
+        order: 2;
+        margin: 85px 0 0 70px;
+
+    }
+
+    .project-main {
+        width: 280px;
+        padding: 0 0 70px;
+    }
+
+    .project-main p {
+        font-size: 15px;
+        margin-bottom: 33px;
+
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .project:first-of-type {
+        margin-top: 30px;
+    }
+
+    .project {
+        justify-content: start;
+        margin-bottom: 80px;
+    }
+
+    .project-img {
+        margin: 0px 120px 0 0;
+        align-items: flex-start;
+    }
+
+    .project-img img {
+        max-width: 540px;
+
+    }
+
+    .project:nth-of-type(even) .project-img {
+        order: 2;
+        margin: 0 0 0 120px;
+
+    }
+
+    .project-main {
+        width: 100%;
+        max-width: 355px;
+        padding: 0 0 70px;
+        margin: 0;
+    }
+
+    .project-main p {
+        font-size: 16px;
+        margin-bottom: 33px;
+    }
 }
