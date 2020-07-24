@@ -31,13 +31,13 @@ h2 {
 h1 {
   font-size: 50px;
   line-height: 50px;
-  letter-spacing: -0.45;
+  letter-spacing: -0.45px;
 }
 
 h2 {
   font-size: 40px;
   line-height: 42px;
-  letter-spacing: -0.36;
+  letter-spacing: -0.36px;
 }
 
 h3,
@@ -49,11 +49,19 @@ h6 {
   color: var(--primary-dark-gray-blue);
 }
 
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+}
+
 p {
   font-family: "Public Sans", sans-serif;
   color: var(--primary-dark-blue);
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: .1px;
+
 
 }
 
